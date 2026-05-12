@@ -6,14 +6,14 @@
 
 [中文版](./README.zh.md) | [English](./README.md)
 
-飞书官方 CLI 工具，由 [larksuite](https://github.com/larksuite) 团队维护 — 让人类和 AI Agent 都能在终端中操作飞书。覆盖消息、文档、多维表格、电子表格、幻灯片、日历、邮箱、任务、会议、Markdown 等核心业务域，提供 200+ 命令及 24 个 AI Agent [Skills](./skills/)。
+飞书官方 CLI 工具，由 [larksuite](https://github.com/larksuite) 团队维护 — 让人类和 AI Agent 都能在终端中操作飞书。覆盖消息、文档、多维表格、电子表格、幻灯片、日历、邮箱、任务、会议、Markdown 等核心业务域，提供 200+ 命令及 25 个 AI Agent [Skills](./skills/)。
 
 [安装](#安装与快速开始) · [AI Agent Skills](#agent-skills) · [认证](#认证) · [命令](#三层命令调用) · [进阶用法](#进阶用法) · [安全](#安全与风险提示使用前必读) · [贡献](#贡献)
 
 ## 为什么选 lark-cli？
 
-- **为 Agent 原生设计** — 24 个 [Skills](./skills/) 开箱即用，适配主流 AI 工具，Agent 无需额外适配即可操作飞书
-- **覆盖面广** — 17 大业务域、200+ 精选命令、24 个 AI Agent [Skills](./skills/)
+- **为 Agent 原生设计** — 25 个 [Skills](./skills/) 开箱即用，适配主流 AI 工具，Agent 无需额外适配即可操作飞书
+- **覆盖面广** — 17 大业务域、200+ 精选命令、25 个 AI Agent [Skills](./skills/)
 - **AI 友好调优** — 每条命令经过 Agent 实测验证，提供更友好的参数、智能默认值和结构化输出，大幅提升 Agent 调用成功率
 - **开源零门槛** — MIT 协议，开箱即用，`npm install` 即可使用
 - **三分钟上手** — 一键创建应用、交互式登录授权，从安装到第一次 API 调用只需三步
@@ -139,6 +139,7 @@ lark-cli auth status
 | `lark-shared`                   | 应用配置、认证登录、身份切换、权限管理、安全规则（所有其他 skill 自动加载） |
 | `lark-calendar`                 | 日历日程、议程查看、忙闲查询、时间建议                       |
 | `lark-im`                       | 发送/回复消息、群聊管理、消息搜索、上传下载图片与文件、表情回复          |
+| `lark-fs`                       | 将飞书文档和最近聊天记录挂载为只读本地文件树，便于 Agent 用 `rg`/`jq` 跨材料搜索 |
 | `lark-doc`                      | 创建、读取、更新、搜索文档（基于 Markdown）                |
 | `lark-drive`                    | 上传、下载文件，管理权限与评论                           |
 | `lark-markdown`                 | 创建、读取、覆盖更新 Drive 中的原生 Markdown 文件         |

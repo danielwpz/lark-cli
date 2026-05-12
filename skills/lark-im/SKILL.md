@@ -50,6 +50,10 @@ When using bot identity (`--as bot`) to fetch messages (e.g. `+chat-messages-lis
 
 Card messages (`interactive` type) are not yet supported for compact conversion in event subscriptions. The raw event data will be returned instead, with a hint printed to stderr.
 
+### Cross-Chat Search with LarkFS
+
+When the user wants to search across many recent chats, or search docs and chats together, prefer [`lark-fs`](../lark-fs/SKILL.md). Mount LarkFS and use `rg` / `jq` over `im/chats` instead of repeatedly probing IM APIs by hand.
+
 ## Shortcuts（推荐优先使用）
 
 Shortcut 是对常用操作的高级封装（`lark-cli im +<verb> [flags]`）。有 Shortcut 的操作优先使用。

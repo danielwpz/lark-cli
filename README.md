@@ -6,14 +6,14 @@
 
 [中文版](./README.zh.md) | [English](./README.md)
 
-The official [Lark/Feishu](https://www.larksuite.com/) CLI tool, maintained by the [larksuite](https://github.com/larksuite) team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Slides, Calendar, Mail, Tasks, Meetings, Markdown, and more, with 200+ commands and 24 AI Agent [Skills](./skills/).
+The official [Lark/Feishu](https://www.larksuite.com/) CLI tool, maintained by the [larksuite](https://github.com/larksuite) team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Slides, Calendar, Mail, Tasks, Meetings, Markdown, and more, with 200+ commands and 25 AI Agent [Skills](./skills/).
 
 [Install](#installation--quick-start) · [AI Agent Skills](#agent-skills) · [Auth](#authentication) · [Commands](#three-layer-command-system) · [Advanced](#advanced-usage) · [Security](#security--risk-warnings-read-before-use) · [Contributing](#contributing)
 
 ## Why lark-cli?
 
-- **Agent-Native Design** — 24 structured [Skills](./skills/) out of the box, compatible with popular AI tools — Agents can operate Lark with zero extra setup
-- **Wide Coverage** — 17 business domains, 200+ curated commands, 24 AI Agent [Skills](./skills/)
+- **Agent-Native Design** — 25 structured [Skills](./skills/) out of the box, compatible with popular AI tools — Agents can operate Lark with zero extra setup
+- **Wide Coverage** — 17 business domains, 200+ curated commands, 25 AI Agent [Skills](./skills/)
 - **AI-Friendly & Optimized** — Every command is tested with real Agents, featuring concise parameters, smart defaults, and structured output to maximize Agent call success rates
 - **Open Source, Zero Barriers** — MIT license, ready to use, just `npm install`
 - **Up and Running in 3 Minutes** — One-click app creation, interactive login, from install to first API call in just 3 steps
@@ -138,6 +138,7 @@ lark-cli auth status
 | `lark-shared`                   | App config, auth login, identity switching, scope management, security rules (auto-loaded by all other skills) |
 | `lark-calendar`                 | Calendar events, agenda view, free/busy queries, time suggestions                                              |
 | `lark-im`                       | Send/reply messages, group chat management, message search, upload/download images & files, reactions          |
+| `lark-fs`                       | Mount Lark docs and recent chat history as a read-only local file tree for Agent search with `rg`/`jq`          |
 | `lark-doc`                      | Create, read, update, search documents (Markdown-based)                                                        |
 | `lark-drive`                    | Upload, download files, manage permissions & comments                                                          |
 | `lark-markdown`                 | Create, fetch, and overwrite Drive-native Markdown files                                                       |

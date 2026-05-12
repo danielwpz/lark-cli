@@ -38,6 +38,7 @@ lark-cli docs +update --api-version v2 --doc "文档URL或token" --command appen
 - 用户明确说"下载素材" → 用 `lark-cli docs +media-download`
 - 如果目标是画板/whiteboard/画板缩略图 → 只能用 `lark-cli docs +media-download --type whiteboard`（不要用 `+media-preview`）
 - 用户说"找一个表格""按名称搜电子表格""找报表""最近打开的表格""最近我编辑过的 xxx" → 直接用 `lark-cli drive +search`（参考 [`lark-drive`](../lark-drive/references/lark-drive-search.md)）。**老的 `docs +search` 已进入维护期、后续会下线，不要再新增依赖。**
+- 用户要跨很多文档做全文搜索，或同时搜索文档和聊天记录 → 切到 [`lark-fs`](../lark-fs/SKILL.md)，把飞书内容 mount 成本地文件树后用 `rg` / `find` / `sed`。
 - `drive +search` 结果里会直接返回 `SHEET` / `Base` / `FOLDER` 等云空间对象，是资源发现的统一入口
 - 拿到 spreadsheet URL/token 后 → 切到 `lark-sheets` 做对象内部操作
 - 用户说"给文档加评论""查看评论""回复评论""给评论加/删除表情 reaction" → 切到 `lark-drive` 处理
